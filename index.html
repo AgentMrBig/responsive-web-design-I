@@ -52,22 +52,12 @@
     <!-- END @media 800 nav setup -->
     
     <!-- START @media 500 nav setup -->
-    <nav id="topnavRD_close" class="topnavRD_closed">
-        <ul>
+    
 
-        </ul>
+      <nav id="topnavRD_open" class="topnavRD_open centerFlexColumn">
           <ul>
-            <li class="topRightLogo"></li>
-            <li class="buttonRD">
-                <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
-                    <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
-                </button>
-            </li>
-            
+              <li class="topRightLogo"></li>    
           </ul>
-      </nav>
-
-      <nav id="topnavRD_open" class="topnavRD_open">
           <ul>
             <li><a class="navItem grow" href="services.html">Services</a></li>
             <li><a class="navItem grow" href="#product">Product</a></li>
@@ -76,15 +66,7 @@
             <li><a class="navItem grow" href="#about">About</a></li>
             <li><a class="navItem grow" href="#contact">Contact</a></li>   
           </ul>
-            <ul>
-              <li class="topRightLogo"></li>
-              <li class="buttonRD">
-                  <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
-                      <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
-                  </button>
-              </li>
-              
-            </ul>
+            
         </nav>
   </div>
   <!-- END @media 500 nav setup -->
@@ -132,8 +114,8 @@
 
   <br><br>
   
-  <!--START Top two articles-->
-  <section> 
+  <!--START Top two articles 501px and up-->
+  <section class="only501up"> 
     <hr></hr>
     <div class="baseFlexContainer">
       
@@ -158,16 +140,15 @@
          </article>  
         </div> 
     </div> 
-    <!--END Top two articles-->
   </section>
-    <div class="img-center">
+  <!--END Top two articles 500px and up-->
 
-    </div> 
-    
-
-    <div class="bottomFlexContainer">
-      
-        <div class="test flexItem">
+  <!--START Top two articles 500px and below-->
+  <section class="only500below"> 
+      <hr></hr>
+      <div class="mainFlex">
+        
+        <div class="flexI">
           <article class="myArticle flexItem">
             <h4>Features</h4>
             <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
@@ -177,19 +158,7 @@
           </article>
           
         </div>
-
-        <div class="test flexItem">
-            <article class="myArticle flexItem">
-               <h4>About</h4>
-               <p>Aliquam elementum magna eros, ac posuere elvit 
-                 tempus et. Suspendisse vel tempus odio, in interdutm 
-                 nisi. Suspendisse eu ornare nisl. Nullam convallis 
-                 augue justo, at imperdiet metus scelerisque quis</p>
-           
-            </article>  
-           </div> 
-
-        <div class="test flexItem">
+        <div class="flexI">
            <article class="myArticle flexItem">
               <h4>About</h4>
               <p>Aliquam elementum magna eros, ac posuere elvit 
@@ -200,44 +169,97 @@
            </article>  
           </div> 
       </div> 
+    </section>
+  <!--END Top two articles 500px and below-->
 
-    <!--
-     Bottom 3 articles 
-    <section>
-      <div class="bottomFlexContainer">
-        <div class="flexItem">
-          <article class="myArticle">
-              <h4>Services</h4>
-              <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
-                Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu 
-                ornare nisl. Nullam convallis augue justo, at imperdiet metus 
-                scelerisque quis.</p>
-          </article>
-            
-          </div>
-          <div class="flexItem">
-              <article class="myArticle">
-                  <h4>Product</h4>
-                  <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis</p>
-              
+    <div class="img-center">
+
+    </div> 
+    
+    <!--START Bottom three articles 500px and up-->
+    <section class="only500up">
+        <div class="bottomFlexContainer">
+      
+            <div class="test flexItem">
+              <article class="myArticle flexItem">
+                <h4>Features</h4>
+                <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
+                  Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu 
+                  ornare nisl. Nullam convallis augue justo, at imperdiet metus 
+                  scelerisque quis.</p>
               </article>
               
-            </div> 
+            </div>
+    
+            <div class="test flexItem">
+                <article class="myArticle flexItem">
+                   <h4>About</h4>
+                   <p>Aliquam elementum magna eros, ac posuere elvit 
+                     tempus et. Suspendisse vel tempus odio, in interdutm 
+                     nisi. Suspendisse eu ornare nisl. Nullam convallis 
+                     augue justo, at imperdiet metus scelerisque quis</p>
+               
+                </article>  
+               </div> 
+    
+            <div class="test flexItem">
+               <article class="myArticle flexItem">
+                  <h4>About</h4>
+                  <p>Aliquam elementum magna eros, ac posuere elvit 
+                    tempus et. Suspendisse vel tempus odio, in interdutm 
+                    nisi. Suspendisse eu ornare nisl. Nullam convallis 
+                    augue justo, at imperdiet metus scelerisque quis</p>
+              
+               </article>  
+              </div> 
+          </div> 
 
-          <div class="flexItem">
-              <article class="myArticle flexItem">
-                  <h4>Vision</h4>
+    </section>
+    
+      <!--END Bottom three articles 500px and up-->
+
+      <!--START Bottom three articles 500px and below-->
+      <article class="only500below">
+          <div class="mainFlex">
+      
+              <div class="flexI">
+                <article class="myArticle flexItem">
+                  <h4>Features</h4>
                   <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
                     Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu 
                     ornare nisl. Nullam convallis augue justo, at imperdiet metus 
                     scelerisque quis.</p>
-              </article>
-            
-          </div>  
-      </div>
-       
-  </section>
--->
+                </article>
+                
+              </div>
+      
+              <div class="flexI">
+                  <article class="myArticle flexItem">
+                     <h4>About</h4>
+                     <p>Aliquam elementum magna eros, ac posuere elvit 
+                       tempus et. Suspendisse vel tempus odio, in interdutm 
+                       nisi. Suspendisse eu ornare nisl. Nullam convallis 
+                       augue justo, at imperdiet metus scelerisque quis</p>
+                 
+                  </article>  
+                 </div> 
+      
+              <div class="flexI">
+                 <article class="myArticle flexItem">
+                    <h4>About</h4>
+                    <p>Aliquam elementum magna eros, ac posuere elvit 
+                      tempus et. Suspendisse vel tempus odio, in interdutm 
+                      nisi. Suspendisse eu ornare nisl. Nullam convallis 
+                      augue justo, at imperdiet metus scelerisque quis</p>
+                
+                 </article>  
+                </div> 
+            </div> 
+      </article>
+    
+
+      <!--START Bottom three articles 500px and below-->
+   
       <hr></hr>
 
       <footer>
