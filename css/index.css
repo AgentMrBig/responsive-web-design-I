@@ -91,7 +91,10 @@ h1, h2, h3, h4, h5 {
 	background-image: -webkit-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
 	background-image: -ms-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
 	background-image: linear-gradient(to bottom, #637694 0%, #C5CFE0 100%);
-	*/
+    */
+    
+    background-color: white;
+
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
@@ -133,7 +136,8 @@ h1, h2, h3, h4, h5 {
 	
 	.topnavRD_closed{
 		display: flex;
-	}
+    }
+
 
 /* START - media queries */
 
@@ -161,11 +165,12 @@ h1, h2, h3, h4, h5 {
     }
     
     
+    
 }
 @media screen and (min-width: 500px){
 	nav ul{
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		
 	}
 
@@ -194,7 +199,11 @@ h1, h2, h3, h4, h5 {
 	.logo-right{
 		margin-right: 30px;
 	}
-	
+
+    .topSectionLeft{
+        
+    }
+    
 }
 
 
@@ -202,10 +211,20 @@ h1, h2, h3, h4, h5 {
     .topnav800{
         display:none;
     }
+
+    .navItem{
+        padding-bottom: 20px;
+        margin: 0 30px 0 30px;
+    }
+    
 }
 
 @media screen and (max-width: 800px){
-	.topSection{
+    
+    
+    
+
+    .topSection{
 		display: flex;
 		
 		flex-direction: column;	
@@ -271,6 +290,7 @@ h1, h2, h3, h4, h5 {
     
     .topRightLogo{
         align-self: flex-start;
+        margin: 20px;
     }
 
     .topnav{
@@ -279,9 +299,24 @@ h1, h2, h3, h4, h5 {
 
     .navItem{
         justify-content: space-evenly;
+        margin:20px 20px 0 20px;
+
     }
+
+    
+    
 }
+
 /* END - media queries */
+.flexItem{
+    width: 10px;
+}
+
+.bottomFlexContainer{
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .topnav{
 	min-height: 66px;
@@ -303,10 +338,7 @@ h1, h2, h3, h4, h5 {
 	color: white;
 }
 
-.navItem{
-	padding-bottom: 20px;
-	margin: 0 30px 0 30px;
-}
+
 
 .topRightLogo{
 	background-image: url("../img/logo.png");
@@ -389,7 +421,85 @@ h1, h2, h3, h4, h5 {
 /* END - css for positioning the circle logo */
 
 
+/* START - css for central section, 2 column flex layout as well
+as the 3 item flex articles below the central img*/
 
+.baseFlexContainer{
+    display: flex;
+   
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    margin: 0px;
+    justify-content: space-between;
+  }
+
+.bottomFlexContainer{
+    display: flex;
+   
+    
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    margin: 0px;
+    justify-content: space-between;
+  }
+  
+  .leftFlexColumn{
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    
+    margin: 5px;
+    padding: 5px;
+    
+    align-items: center;
+  }
+  
+  .rightFlexColumn{
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    
+    margin: 5px;
+    padding: 5px;
+    
+    align-items: center;
+  }
+  
+  .flexItem{
+    width: 210px;
+    height: 200px;
+    
+  }
+  
+  .myArticle{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    
+  }
+
+  .centerFlexColumn{
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+    
+    margin: 5px;
+    padding: 5px;
+    
+    align-items: center;
+  }
+
+  .test{
+      
+  }
+
+  /* END - css for central section, 2 column flex layout */
 
 hr{
 	border: 1px solid black;
