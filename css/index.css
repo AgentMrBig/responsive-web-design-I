@@ -1,3 +1,464 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+.mainContainer{
+	margin-left:70px;
+	margin-right:70px;
+	
+}
+
+/* START - Top Nav CSS */
+
+.wrapper nav{
+	width: 100%;
+	position: fixed;
+	color: black;
+
+  }
+
+  /* menu base styles */
+  
+  nav{
+      /*
+	background-image: -o-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: -moz-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: -webkit-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: -ms-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: linear-gradient(to bottom, #637694 0%, #C5CFE0 100%);
+	*/
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+	flex-grow: 1;
+  }
+  
+  nav ul{
+	justify-content: space-around;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  nav a{
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	display: block;
+	padding: 10px;
+  }
+  
+  nav a:hover{
+
+  }
+
+  .buttonRD button{
+	all: unset;
+	
+	
+  }
+
+  .buttonRD{
+	margin: 0 auto;
+	/* doesn't work = align-content: center;*/
+	margin-left: 50px;
+	
+	}
+	
+	.topnavRD_closed{
+		display: flex;
+	}
+
+/* START - media queries */
+
+@media screen and (max-width: 500px){
+	nav{
+        justify-content: center;
+        align-content: center;
+		
+	}
+
+	.topRightLogo{
+		flex:1;
+	}
+	.topnav{
+		display: none;
+    }
+    
+    .topnav800{
+        display: none;
+    }
+
+    
+	.topnavRD_open{
+		display: none;
+    }
+    
+    
+}
+@media screen and (min-width: 500px){
+	nav ul{
+		display: flex;
+		justify-content: space-around;
+		
+	}
+
+	nav li{
+		/*flex: 1 1 0;*/
+		height: 100%;
+		flex: 0 0 100px;
+	}
+
+	nav{
+		
+	}
+
+	.topRightLogo{
+		display: flex;
+	}
+
+	.topnavRD_open{
+		display: none;
+	}
+
+	.topnavRD_closed{
+		display: none;
+	}
+
+	.logo-right{
+		margin-right: 30px;
+	}
+	
+}
+
+
+@media screen and (min-width: 800px){
+    .topnav800{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 800px){
+	.topSection{
+		display: flex;
+		
+		flex-direction: column;	
+		
+	}
+	.slogan{
+		
+		align-self: center;
+		min-width: 256px;
+	}
+	.logo-right{
+		
+		align-self: center;
+		width: 397px;
+		margin-right: 0px;
+        min-width: 382px;
+        display: none;
+	}
+	.circle{
+		margin-left: 0px;
+	}
+
+	.midSection{
+		flex-direction: column;
+	}
+	.topSectionLeft{
+		align-self: center;
+		justify-self: center;
+		min-width: 500px;
+		padding: 0;
+		
+	}
+
+	.topSectionRight{
+		align-self: center;
+		justify-self: center;
+		min-width: 500px;
+		padding: 0;
+	}
+
+	.botMainSection{
+		display: flexbox;
+		flex-direction: column;
+	}
+
+	.botSectionLeft{
+		align-self: center;
+		
+		min-width: 500px;
+	}
+
+	.botSectionCenter{
+		margin: auto;
+		
+		min-width: 500px;
+	}
+
+	.botSectionRight{
+		align-self: center;
+		
+		min-width: 500px;
+    }
+    
+    .topRightLogo{
+        align-self: flex-start;
+    }
+
+    .topnav{
+        display:none;
+    }
+
+    .navItem{
+        justify-content: space-evenly;
+    }
+}
+/* END - media queries */
+
+.topnav{
+	min-height: 66px;
+}
+
+.topnav a {
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	margin-top: 0px;
+}
+
+.topnav a:hover {
+	color: black;
+}
+
+.topnav a.active {
+	color: white;
+}
+
+.navItem{
+	padding-bottom: 20px;
+	margin: 0 30px 0 30px;
+}
+
+.topRightLogo{
+	background-image: url("../img/logo.png");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	z-index: 20;
+	
+    width: 183px;
+	height: 36px;
+	flex: 1 1 0;
+	justify-content: space-evenly;
+	
+	
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
+
+/* END - Top Nav CSS */
+
+
+/* START - CSS for positioning the slogan and start button     */
+.topSection{
+	padding-top: 60px;
+	margin-left: 0px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.slogan{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 100px;
+	
+	width: 175px;
+	flex:1;
+}
+
+.sloganFine{
+	
+	padding-left: 0px;
+	padding-top: 20px;
+	
+}
+
+.startbutton{
+	width: 150px;
+	height: 20px;
+	margin-left: 0px;
+	box-sizing: border-box;
+}
+
+.blockText{
+	margin-left: auto;
+	margin-right: auto;
+	width: 4em;
+	text-align: center;
+}
+/* END - CSS for positioning the slogan and start button */
+
+/* START - css for positioning the circle logo */
+.logo-right{
+	margin-top: 40px;
+
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	width: 379px;
+	height: 379px;
+	
+  flex: 1 auto;
+	
+}
+
+.circle {
+	border-radius: 50px;
+	
+	
+}
+/* END - css for positioning the circle logo */
+
+
+
+
+hr{
+	border: 1px solid black;
+} 
+
+.midSection{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.topSectionLeft{
+	width: 49%;
+	padding: 10px;	
+		
+}
+
+.topSectionRight{
+	width: 50%;
+	padding: 10px;
+		
+}
+
+.botMainSection{
+	display: flex;
+}
+
+.botSectionLeft{
+	width:33%;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom: 15px;
+	flex: 1 0 auto;
+}
+.botSectionCenter{
+	width:33%;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom: 15px;
+	margin: auto;
+	flex: 1 0 auto;
+}
+.botSectionRight{
+	width:33%;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom: 15px;
+	flex: 1 0 auto;
+}
+
+
+
+.img-center{
+	background-image: url("../img/mid-page-accent.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center;	
+	display: inline-block;
+    width: 100%;
+    height: 182px; 
+}
+
+.bottomSpace{
+	height: 800px;
+}
+
+
+
 
 

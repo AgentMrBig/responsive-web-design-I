@@ -5,12 +5,226 @@
   <meta charset="utf-8">
   <title>Great Idea - Responsive I</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 <!-- Use past code you created here for Great Idea Web Page or past solution for Great Idea Web Page HTML here! -->
+  <!--START - Top nav code-->
+  <div class="wrapper">
+    <nav class="topnav">
+      <ul>
+        <li><a class="navItem grow" href="services.html">Services</a></li>
+        <li><a class="navItem grow" href="#product">Product</a></li>
+        <li><a class="navItem grow" href="#vision">Vision</a></li>
+        <li><a class="navItem grow" href="#features">Features</a></li>
+        <li><a class="navItem grow" href="#about">About</a></li>
+        <li><a class="navItem grow" href="#contact">Contact</a></li>   
+      </ul>
+        <ul>
+          <li class="navItem topRightLogo"></li>
+          
+        </ul>
+    </nav>
+
+    <!-- START @media 800 nav setup -->
+    <nav class="topnav800">
+        <ul>
+            <li class="navItem topRightLogo"></li>
+            
+        </ul>
+      <ul>
+        <li><a class="navItem grow" href="services.html">Services</a></li>
+        <li><a class="navItem grow" href="#product">Product</a></li>
+        <li><a class="navItem grow" href="#vision">Vision</a></li>
+        <li><a class="navItem grow" href="#features">Features</a></li>
+        <li><a class="navItem grow" href="#about">About</a></li>
+        <li><a class="navItem grow" href="#contact">Contact</a></li>   
+      </ul>
+        
+    </nav>
+    <!-- END @media 800 nav setup -->
+    
+    <!-- START @media 500 nav setup -->
+    <nav id="topnavRD_close" class="topnavRD_closed">
+        <ul>
+
+        </ul>
+          <ul>
+            <li class="topRightLogo"></li>
+            <li class="buttonRD">
+                <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
+                    <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
+                </button>
+            </li>
+            
+          </ul>
+      </nav>
+
+      <nav id="topnavRD_open" class="topnavRD_open">
+          <ul>
+            <li><a class="navItem grow" href="services.html">Services</a></li>
+            <li><a class="navItem grow" href="#product">Product</a></li>
+            <li><a class="navItem grow" href="#vision">Vision</a></li>
+            <li><a class="navItem grow" href="#features">Features</a></li>
+            <li><a class="navItem grow" href="#about">About</a></li>
+            <li><a class="navItem grow" href="#contact">Contact</a></li>   
+          </ul>
+            <ul>
+              <li class="topRightLogo"></li>
+              <li class="buttonRD">
+                  <button onclick="myFunction()" class="bars grow " href="#navigation-main" aria-label="Skip to main navigation">
+                      <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
+                  </button>
+              </li>
+              
+            </ul>
+        </nav>
+  </div>
+  <!-- END @media 500 nav setup -->
+ 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topnavRD_open");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+      
+    }
+
+  </script>
+  <!--END - Top nav code-->
+
+<section class="mainContainer">
+  <!--START - Top section code-->
+  <section class="topSection">
+    <div class="topSectionLeft slogan">
+      <div class="sloganFine">
+          <h1 class="blockText">
+              Innovation
+              On
+              Demand
+          </h1>
+          <button class="startbutton">
+              Get Started
+          </button>
+      </div>
+      <div class="spaceHolder">
+          &nbsp;
+          &nbsp;
+          &nbsp;
+      </div>
+        
+    </div>
+    <div class="logo-right circle">
+        <!--Here is the logo image div, image and properties set in css-->
+    </div> 
+  </section> 
+  <!--END - Top section code-->
+
+  <br><br>
+  
+  <section> 
+    <hr></hr>
+    <div class="midSection">
+      
+      <div class="topSectionLeft">
+        
+        <h4>Features</h4>
+        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
+          Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu 
+          ornare nisl. Nullam convallis augue justo, at imperdiet metus 
+          scelerisque quis.</p>
+      </div>
+      <div class="topSectionRight">
+         
+          <h4>About</h4>
+          <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis</p>
+      </div> 
+    </div> 
+  </section>
+    <div class="img-center">
+
+    </div> 
+    
+    
+    <section>
+      <div class="botMainSection">
+        <div class="botSectionLeft">
+            <h4>Services</h4>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
+              Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu 
+              ornare nisl. Nullam convallis augue justo, at imperdiet metus 
+              scelerisque quis.</p>
+          </div>
+          <div class="botSectionCenter">
+              <h4>Product</h4>
+              <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis</p>
+          </div> 
+          <div class="botSectionRight">
+            <h4>Vision</h4>
+            <p>Aliquam elementum magna eros, ac posuere elvit tempus et. 
+              Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu 
+              ornare nisl. Nullam convallis augue justo, at imperdiet metus 
+              scelerisque quis.</p>
+          </div>  
+      </div>
+       
+  </section>
+      
+      <hr></hr>
+
+      <footer>
+          <h4>Contact</h4>
+        <address>
+            123 Way 456 Street<br>
+            Somewhere, USA<br>
+            <br>
+            1 (888) 888-8888<br>
+            <br>
+            sales@greatidea.io<br>
+            <br>
+            Copyright Great Idea! 2018<br>
+        </address>
+          
+          
+      </footer>
+      <section class="bottomSpace">
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+      </section>
+      
+      
+</section>
+
+
 </body>
 </html>
