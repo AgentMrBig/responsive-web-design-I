@@ -261,9 +261,7 @@ h1, h2, h3, h4, h5 {
         
       }
     
-      .only500up{
-        display: none;
-      }
+      
 }
 @media screen and (min-width: 500px){
 	nav ul{
@@ -302,9 +300,15 @@ h1, h2, h3, h4, h5 {
         
     }
     .only501up{
+        
+    }
+    .only500below{
+        display:none;
+      }
+    
+    .topnavRD_open{
         display: none;
     }
-    
 }
 
 
@@ -320,6 +324,11 @@ h1, h2, h3, h4, h5 {
         margin:20px 20px 0 20px;
 
     }
+
+    #topnavRD_open{
+        border: solid 1px red;
+        display: none;
+    }
     
 }
 
@@ -327,6 +336,7 @@ h1, h2, h3, h4, h5 {
     
     
     
+   
 
     .topSection{
 		display: flex;
